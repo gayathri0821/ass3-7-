@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.NoSuchElementException;
+//create class HelloWorld
+public class HelloWorld
+{
+public static void main(String args[])
+{
+//using try catch block to handle exceptions
+    try
+    {
+    //taking input value by using scanner
+Scanner sc=new Scanner(System.in);
+//prompt the user for input value
+System.out.println("enter decimal no:");
+int dec=sc.nextInt();
+//prompt the user for print output value by using Integer.toBinaryString() method
+System.out.println(" the binary number of " + dec + " is :" +Integer.toBinaryString(dec));
+}//endof try block
+catch(NoSuchElementException ne)
+{
+    System.out.println();
+}//end of catch block
+
+}//end of main method
+    
+}//end of class block
